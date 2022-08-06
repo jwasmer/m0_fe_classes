@@ -3,20 +3,16 @@
 // it should have a color property, that is silver by default
 // it should have a method called "say" that returns whatever string is passed in, with "*~*" at the beginning and end of the string
 class Unicorn {
-
   constructor(name) {
     this.name = name;
     this.color = `silver`;
   }
-
-  say() {
-    console.log(`*~*${this.name}*~*`);
+  say(greeting) {
+    console.log(`*~*${greeting}*~*`);
   }
-
 }
-
 const sparkles = new Unicorn(`Sparkles`);
-sparkles.say();
+sparkles.say(`Good morning!`);
 
 console.log(sparkles)
 
